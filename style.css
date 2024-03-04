@@ -14,7 +14,7 @@
 }
 
 .card {
-    width: 35vw;
+    width: 55vw;
     height: 80vh;
     text-align: center;
     font-size: 1.3em;
@@ -32,7 +32,7 @@
 }
 
 .card input{
-    width: 220px;
+    width: 30vw;
     height: 40px;
     padding-left: 10px;
     font-size: 0.7em;
@@ -47,7 +47,7 @@
 
 .card h1{
     color: #ffffff;
-    text-shadow: 1px 1px 1px #8f8f8f;
+    text-shadow: 0px 0px 7px #000000;   
 }
 
 .card button{
@@ -59,6 +59,7 @@
     border-radius: 10px;
     padding: 10px 30px;
     cursor: pointer;
+    border: none;
 }
 
 .card button:hover{
