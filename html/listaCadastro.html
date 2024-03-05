@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Cadastro - PDA</title>
+    <title>Lista de Cadastro</title>
     <link rel="stylesheet" href="../css/styleLista.css">
 </head>
 <body>
+    <main id="principal" class="principal">
+        <section id="container-cadastro" class="container-cadastro">
+            <div>
+                <table>
+                    <caption>Funcionarios Cadastrados</caption>
+                    
+                    <thead>
+                        <tr>
+                            <th class="id">ID</th>
+                            <th class="nome">Nome</th>
+                            <th class="cargo">Cargo</th>
+                            <th class="contato">Contado</th>
+                            <th class="delete" colspan="2">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="id">0</td>
+                            <td class="nome">andrey</td>
+                            <td class="cargo">adm</td>
+                            <td class="contato">andrey@gmail.com</td>
+                            <td class="update"><a class="editar" id="editar" href="">Editar</a></td>
+                            <td class="delete"><a class="excluir" id="excluir" href="">Excluir</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button>Cadastrar novo</button>
+        </section>
+    </main>
     <script src="../js/scriptLista.js"></script>
 </body>
 </html>
