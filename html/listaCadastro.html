@@ -6,11 +6,11 @@
     <title>Lista de Cadastro</title>
     <link rel="stylesheet" href="../css/styleLista.css">
 </head>
-<body>
+<body onload="main()">
     <main id="principal" class="principal">
         <section id="container-cadastro" class="container-cadastro">
             <div>
-                <table>
+                <table id="tabela-funcionario">
                     <caption>Funcionarios Cadastrados</caption>
                     
                     <thead>
@@ -22,19 +22,12 @@
                             <th class="delete" colspan="2">Ação</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td class="id">0</td>
-                            <td class="nome">andrey</td>
-                            <td class="cargo">adm</td>
-                            <td class="contato">andrey@gmail.com</td>
-                            <td class="update"><a class="editar" id="editar" href="">Editar</a></td>
-                            <td class="delete"><a class="excluir" id="excluir" href="">Excluir</a></td>
-                        </tr>
+                    <tbody id="corpoTabela">
+                        
                     </tbody>
                 </table>
             </div>
-            <button>Cadastrar novo</button>
+            <button id="cadastrar">Cadastrar novo</button>
         </section>
     </main>
     <script src="../js/scriptLista.js"></script>

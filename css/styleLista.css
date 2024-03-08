@@ -49,10 +49,9 @@ div{
     margin-top: 2.5px;
 }
 
-button{
+button#cadastrar{
     width: 200px;
     height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
@@ -65,7 +64,7 @@ button{
 }
 
 
-button:hover{
+button#cadastrar:hover{
     transition : 717ms;
     width: 210px;
     height: 60px;
@@ -76,8 +75,10 @@ button:hover{
 }
 
 .excluir, .editar {
-    text-decoration: none;
-    color: #000000;
+    width: 100px;
+    height: 30px;
+    font-size: medium;
+    cursor: pointer;
 }
 
 .excluir{

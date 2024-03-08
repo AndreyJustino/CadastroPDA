@@ -1,34 +1,36 @@
 const buttonCadastrar = document.getElementById("cadastrar")
 const buttonLista = document.getElementById("verLista")
 
-buttonLista.addEventListener("click", () => {
-    window.location.replace("../html/listaCadastro.html")
-})
+if(!localStorage.getItem("listaFuncionario")){
+    localStorage.setItem("listaFuncionario", JSON.stringify([]) )
+}
+
 class Funcionario {
-    constructor (id,nome, cargo, contato){
-        this.id = id
+    constructor (nome, cargo, contato){
+        this.id = JSON.parse(localStorage.getItem("listaFuncionario")).length
         this.nome = nome
         this.cargo = cargo
         this.contato = contato
     }
 }
 
-let lista = []
-
-let id = 0
-
 function cadastrar (){
+    
     let nome = document.getElementById("name").value;
     let cargo = document.getElementById("occupation").value;
     let email = document.getElementById("contact").value;
     
-    lista.push(new Funcionario(id,nome,cargo,email))
-
-    id++
-
-    localStorage.setItem("listaFuncionario", lista)
+    const novoFuncionario = new Funcionario(nome,cargo,email) 
     
+    const listaFuncionario = JSON.parse(localStorage.getItem("listaFuncionario"))
+    listaFuncionario.push(novoFuncionario)
+
+    localStorage.setItem("listaFuncionario", JSON.stringify(listaFuncionario))
 }
+
+buttonLista.addEventListener("click", () => {
+    window.location.replace("../html/listaCadastro.html")
+})
 
 buttonCadastrar.addEventListener("click", () => {
     cadastrar()
