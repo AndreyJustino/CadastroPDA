@@ -4,7 +4,7 @@ let tabela = document.getElementById("tabela-funcionario")
 let corpoTabela = document.getElementById("corpoTabela")
 
 buttonCadastrar.addEventListener("click", () => {
-    window.location.replace("../html/index.html")
+    window.location.replace("../index.html")
 })
 
 function main(){
