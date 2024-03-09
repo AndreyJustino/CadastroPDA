@@ -1,4 +1,4 @@
-[
+
 # Mini-Projeto PDA
 
 Muitos projetos sociais, muitas escolas, empresas, dentre várias outras, utilizam um sistema de cadastro, seja de animais, plantas, funcionários, alunos, dentre outras tantas possibilidades. Ter esses dados cadastrados permite gerenciar da melhor forma possível.
